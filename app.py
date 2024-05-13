@@ -3,21 +3,15 @@ from flask import Flask, request, render_template
 from lib.database_connection import get_flask_database_connection
 #install flask_bcryt later for hashed passwords
 
-# Create a new Flask app
 app = Flask(__name__)
 
-# == Your Routes Here ==
+# == Routes Here ==
 
-# GET /index
-# Returns the homepage
-# Try it:
-#   ; open http://localhost:5001/index
-@app.route('/index', methods=['GET'])
+@app.route('/', methods=['GET'])
 def get_index():
-    return render_template('index.html')
+    return render_template('welcome.html')
 
-# These lines start the server if you run this file directly
-# They also start the server configured to use the test database
-# if started in test mode.
+# These lines start the server
 if __name__ == '__main__':
     app.run(debug=True, port=int(os.environ.get('PORT', 5001)))
+    
