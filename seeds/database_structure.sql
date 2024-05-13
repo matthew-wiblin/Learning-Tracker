@@ -1,9 +1,7 @@
 -- drop necessary tables and sequences
-DROP TABLE IF EXISTS descriptions CASCADE;
 DROP TABLE IF EXISTS tasks CASCADE;
 DROP TABLE IF EXISTS subjects CASCADE;
 DROP TABLE IF EXISTS users CASCADE;
-DROP SEQUENCE IF EXISTS descriptions_id_seq;
 DROP SEQUENCE IF EXISTS tasks_id_seq;
 DROP SEQUENCE IF EXISTS subjects_id_seq;
 DROP SEQUENCE IF EXISTS users_id_seq;
