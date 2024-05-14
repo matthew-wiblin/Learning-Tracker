@@ -12,7 +12,7 @@ CREATE TABLE users(
     id SERIAL PRIMARY KEY,
     email_address VARCHAR(255),
     username VARCHAR(255),
-    password VARCHAR(255)
+    password VARCHAR(255) -- hashed in database
 );
 
 -- subjects table = stores all subjects relating to users
@@ -31,6 +31,7 @@ CREATE TABLE tasks(
     id SERIAL PRIMARY KEY,
     task_name VARCHAR(255),
     task_description VARCHAR(10000),
+    completed BOOLEAN,
     subject_id INTEGER,
     CONSTRAINT fk_subject_id FOREIGN KEY (subject_id) 
     REFERENCES subjects(id) ON DELETE CASCADE
