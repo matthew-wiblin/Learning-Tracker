@@ -11,7 +11,10 @@ app = Flask(__name__)
 def get_index():
     return render_template('welcome.html')
 
+@app.route('/signup', methods=['GET'])
+def get_index():
+    return render_template('signup.html')
+
 # These lines start the server
 if __name__ == '__main__':
     app.run(debug=True, port=int(os.environ.get('PORT', 5001)))
-    
