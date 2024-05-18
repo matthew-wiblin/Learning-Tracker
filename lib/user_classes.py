@@ -1,4 +1,4 @@
-#These classes define and control the user table in the database
+#These classes define and control the users table in the database
 
 class User:
     def __init__(self, id, email_address, username, password):
