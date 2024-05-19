@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def get_index():
-    return render_template('welcome.html')
+    return render_template('index.html')
 
 @app.route('/signup', methods=['GET'])
 def get_index():

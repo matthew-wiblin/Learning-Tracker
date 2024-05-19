@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Tracker</title>
+</head>
+<body>
+    <h1>Learning Tracker</h1>
+    <h2>Enter your login information, or:</h2>
+    <a href="signup.html" title="Create an account here">
+        Signup here
+    </a>
+    <br>
+    <br>
+    <form action="/signup" method="POST">
+        <p>
+            <label for="email_address">Email address:</label>
+            <br>
+            <input type="text" name="email_address" id="email_address">
+        </p>
+        <p>
+            <label for="password">Password:</label>
+            <br>
+            <input type="password" name="password" id="password">
+        </p>
+        <p>
+            <input type="submit" value="Login">
+        </p>
+    </form>
+</body>
+</html>
